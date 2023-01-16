@@ -5,14 +5,14 @@ var canvas = false,
         y: 0
     },
     fps = {
-        update: 60,
-        draw: 30
+        update: 40,
+        draw: 10
     },
     Conf = {
         mutation_ticks: 10000,
         world: null
     },
-    fastFps = 60,
+    fastFps = 40,
     sync = true,
     paused = false,
     startDraw,
@@ -24,7 +24,7 @@ var canvas = false,
     fastMode = false,
     chain = [],
     follow = null,
-    zoom = 1,
+    zoom = 0.5,
     zoomInt = null,
     zoomFinal = zoom,
     History = {
