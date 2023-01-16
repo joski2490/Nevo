@@ -5,23 +5,23 @@ var canvas = false,
         y: 0
     },
     fps = {
-        update: 40,
-        draw: 10
+        update: 60,
+        draw: 30
     },
     Conf = {
         mutation_ticks: 10000,
         world: null
     },
-    fastFps = 40,
+    fastFps = 60,
     sync = true,
     paused = false,
     startDraw,
-    showInfo = true,
+    showInfo = false,
     autoFollow = true,
     drawHelp = true,
     DEBUG = false,
     PLAYER_MODE = false,
-    fastMode = false,
+    fastMode = true,
     chain = [],
     follow = null,
     zoom = 1,
@@ -48,11 +48,11 @@ drawables = [
 
 // Init
 Conf.world = {
-    w: 20000,
-    h: 20000,
-    tileSize: 400,
-    default_meals: 8000,
-    default_nevos: 600,
+    w: 800,
+    h: 600,
+    tileSize: 40,
+    default_meals: 800,
+    default_nevos: 60,
 }
 Conf.meal = {
     energy: 500,
